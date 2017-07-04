@@ -1,0 +1,62 @@
+/* Styles go here */
+
+body {
+  background-color: #62da96;
+}
+
+.container {
+  padding: 20px;
+}
+
+.addTodo {
+  margin: 0 auto;
+  height: 100%;
+  background-color: #0a3a69;
+}
+
+.centre {
+  width: 400px;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px
+}
+
+ul {
+  margin: 20px;
+  padding-top: 10px;
+  list-style-type: none;
+  margin-left: -15px;
+}
+
+li {
+  background-color: #edf5e1;
+  padding: 10px;
+  margin-top: 2px;
+}
+
+input {
+  padding: 2px;
+  width: 200px;
+  height: 37px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.btn-primary {
+  color: #0a3a69;
+  background-color: #edf5e1;
+  border: #edf5e1;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #0a3a69;
+    background-color: #8ee4af;
+    border: #edf5e1; /*set the color you want here*/
+}
+
+.deleteButton {
+  float: right;
+  color: #0a3a69;
+  background-color: #edf5e1;
+  border: #edf5e1;
+}
