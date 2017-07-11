@@ -15,6 +15,10 @@
   <!--[if lt IE 9]>
       <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Shadows+Into+Light" rel="stylesheet">
   <!-- Le fav and touch icons -->
   <link rel="shortcut icon" href="images/favicon.ico" />
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
@@ -29,25 +33,27 @@
 <body>
 
   <div class="container">
-    <h1 class="text-center">toDoList</h1>
+
+    <h1 class="text-center">ToDo List</h1>
 
     <div class="addTodo">
-      <div class="centre">
+
+        <div class="centre">
           <input id="addTodoTextInput" type="text">
-          <button class="btn btn-primary" onclick="handlers.addTodo()">Add Todo</button>
+          <button class="btn btn-primary add-btn" onclick="handlers.addTodo()">Add Todo</button>
+        </div>
 
-      </div>
-      <div>
-      <ul>
-      </ul>
-    </div>
+        <div>
+            <ul>
+
+            </ul>
+        </div>
+
     </div>
 
-    <div class="container">
+    <!-- <div class="container">
       <button class="btn btn-primary" onclick="handlers.toggleAll()">Toggle All</button>
     </div>
-
-
 
     <div class="container">
       <button class="btn btn-primary" onclick="handlers.changeTodo()">Change Todo</button>
@@ -55,16 +61,15 @@
       <input id="changeTodoTextInput" type="text">
     </div>
 
-
     <div class="container">
       <button class="btn btn-primary" onclick="handlers.toggleCompleted()">Completed</button>
       <input id="toggleCompletedPositionInput" type="number">
-    </div>
-
+    </div> -->
 
   </div>
 
   <script src="script.js"></script>
+
 </body>
 
 </html>

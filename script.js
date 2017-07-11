@@ -94,7 +94,7 @@ var view = {
   },
   createDeleteButton: function() {
     var deleteButton = document.createElement('button');
-    deleteButton.textContent = 'Delete';
+    deleteButton.textContent = 'x';
     deleteButton.className = 'deleteButton'
     return deleteButton;
   },
@@ -104,6 +104,12 @@ var view = {
       var elementClicked = event.target;
       if (elementClicked.className === 'deleteButton') {
         handlers.deleteTodo(parseInt(elementClicked.parentNode.id));
+        if (confirm('Are you sure you want to delete this ToDo?')) {
+          // Save it!
+          } else {
+          // Do nothing!
+        }
+
       }
     });
   }

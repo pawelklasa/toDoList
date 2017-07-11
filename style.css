@@ -4,60 +4,69 @@ html {
 }
 
 body {
-  background: #36d1dc; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #36d1dc, #5b86e5); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #36d1dc, #5b86e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-top: 200px;
+    background: #36d1dc; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #36d1dc, #5b86e5); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #36d1dc, #5b86e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   /*height: calc(100vh - 86px);*/
 }
 
-.container {
-  padding: 20px;
-  height:100%;
+h1 {
+    color: #fff;
+    font-family: 'Shadows Into Light', cursive;
 }
 
-.centre {
-  width: 400px;
-  height: auto;
-  margin: 0 auto;
-  padding: 20px
-}
 
 ul {
-  margin: 20px;
-  padding-top: 10px;
-  list-style-type: none;
-  margin-left: -15px;
+    margin: 20px;
+    padding-top: 10px;
+    list-style-type: none;
+    margin-left: -15px;
+}
+
+
+.centre {
+    mrgin: 0 auto;
+    width: 100%;
+    text-align: center;
 }
 
 li {
-  background-color: #edf5e1;
-  padding: 10px;
-  margin-top: 2px;
+    color: #fff;
+    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background-color: transparent;
+    border: solid 2px #fff;
+    padding: 10px;
+    margin-top: 2px;
 }
 
 input {
-  padding: 2px;
-  width: 200px;
-  height: 37px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.btn-primary {
-  color: #0a3a69;
-  background-color: #edf5e1;
-  border: #edf5e1;
-}
-
-.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
-    color: #0a3a69;
-    background-color: #8ee4af;
-    border: #edf5e1; /*set the color you want here*/
+    width: 300px;
+    padding: 2px;
+    height: 37px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
 .deleteButton {
-  float: right;
-  color: #0a3a69;
-  background-color: #edf5e1;
-  border: #edf5e1;
+    height: 20px;
+    color: #fff;
+    background-color: transparent;
+    border: solid 0px #fff;
+    float: right;
+}
+
+.btn-primary {
+    height: 37px;
+    color: #fff;
+    background-color: transparent;
+    border: solid 2px #fff;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: transparent;
+    border: solid 2px #fff; /*set the color you want here*/
 }
