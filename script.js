@@ -29,39 +29,25 @@ var todoList = {
     var completedTodos = 0;
 
     // Get number of completed todos.
-    // for (var i = 0; i < totalTodos; i++) {
-    //   if (this.todos[i].completed === true) {
-    //     completedTodos++;
-    //   }
-    // }
-
-    this.todos.forEach(function(todo) {
-        if (todo.completed === true) {
-            completedTodos++;
-        }
-    });
+    for (var i = 0; i < totalTodos; i++) {
+      if (this.todos[i].completed === true) {
+        completedTodos++;
+      }
+    }
 
     // Case 1: If everything’s true, make everything false.
     if (completedTodos === totalTodos) {
-    //   for (var i = 0; i < totalTodos; i++) {
-    //     this.todos[i].completed = false;
-    //   }
-    this.todos.forEach(function(todo) {
-        todo.completed = false;
-    });
+      for (var i = 0; i < totalTodos; i++) {
+        this.todos[i].completed = false;
+      }
     // Case 2: Otherwise, make everything true.
     } else {
-        this.todos.forEach(function(todo) {
-            todo.completed = true;
-        });
-    //   for (var i = 0; i < totalTodos; i++) {
-    //     this.todos[i].completed = true;
-    //   }
+      for (var i = 0; i < totalTodos; i++) {
+        this.todos[i].completed = true;
+      }
     }
   }
 };
-
-
 
 var handlers = {
   addTodo: function() {
@@ -153,11 +139,11 @@ var view = {
 
     todosUl.addEventListener('click', function(event) {
      // This if fix for issue #2
-       if (confirm('Are you sure you want to delete this ToDo?')) {
-       } else {
-           if (elementClicked.className === 'deleteButton') {
+     if (confirm('Are you sure you want to delete this ToDo?')) {
+     } else {
+         if (elementClicked.className === 'deleteButton') {
              // Do nothing!
-        }
+         }
      }
       // End of fix
       var elementClicked = event.target;
